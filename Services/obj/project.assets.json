@@ -1312,11 +1312,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ceydapolat/Development/VSCode/FlightTicketApp/FlightTicketApp/Services/Services.csproj",
+      "projectUniqueName": "/Users/ceydapolat/Development/VSCode/Flight-Ticket-App/Services/Services.csproj",
       "projectName": "Services",
-      "projectPath": "/Users/ceydapolat/Development/VSCode/FlightTicketApp/FlightTicketApp/Services/Services.csproj",
+      "projectPath": "/Users/ceydapolat/Development/VSCode/Flight-Ticket-App/Services/Services.csproj",
       "packagesPath": "/Users/ceydapolat/.nuget/packages/",
-      "outputPath": "/Users/ceydapolat/Development/VSCode/FlightTicketApp/FlightTicketApp/Services/obj/",
+      "outputPath": "/Users/ceydapolat/Development/VSCode/Flight-Ticket-App/Services/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/ceydapolat/.nuget/NuGet/NuGet.Config"
@@ -1331,11 +1331,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/ceydapolat/Development/VSCode/FlightTicketApp/FlightTicketApp/Entities/Entities.csproj": {
-              "projectPath": "/Users/ceydapolat/Development/VSCode/FlightTicketApp/FlightTicketApp/Entities/Entities.csproj"
+            "/Users/ceydapolat/Development/VSCode/Flight-Ticket-App/Entities/Entities.csproj": {
+              "projectPath": "/Users/ceydapolat/Development/VSCode/Flight-Ticket-App/Entities/Entities.csproj"
             },
-            "/Users/ceydapolat/Development/VSCode/FlightTicketApp/FlightTicketApp/Repositories/Repositories.csproj": {
-              "projectPath": "/Users/ceydapolat/Development/VSCode/FlightTicketApp/FlightTicketApp/Repositories/Repositories.csproj"
+            "/Users/ceydapolat/Development/VSCode/Flight-Ticket-App/Repositories/Repositories.csproj": {
+              "projectPath": "/Users/ceydapolat/Development/VSCode/Flight-Ticket-App/Repositories/Repositories.csproj"
             }
           }
         }

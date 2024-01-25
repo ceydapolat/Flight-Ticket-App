@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "q9J4q3HQODrHibLT1rqD/PBZo0hbAv4ArFDR4DCOhOuciITwVvMkdZKeiF7lJ/0pSX6YCC2/qa9QQv9wJN4xuA==",
+  "dgSpecHash": "izGbcF2OYZp+n0jteGrDPXFyzrkj3atAwBuXejtnxtz4zGo890pD//9Ip4bnsx1fvW+oq/1Xv1QrZDRwkQ7YPg==",
   "success": true,
-  "projectFilePath": "/Users/ceydapolat/Development/VSCode/FlightTicketApp/FlightTicketApp/FlightTicketApp/FlightTicketApp.csproj",
+  "projectFilePath": "/Users/ceydapolat/Development/VSCode/Flight-Ticket-App/FlightTicketApp/FlightTicketApp.csproj",
   "expectedPackageFiles": [
     "/Users/ceydapolat/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/Users/ceydapolat/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

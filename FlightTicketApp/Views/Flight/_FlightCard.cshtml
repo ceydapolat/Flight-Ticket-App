@@ -1,31 +1,31 @@
 @model Flight
 
 <div class="card my-5">
-        <div class="card-body">
-            <h5 class="card-title">
-                @Model.DepartureAirport &emsp;&emsp;
+    <div class="card-body">
+        <h5 class="card-title">
+            @Model.DepartureAirport &emsp;&emsp;
+            <i class="fa-solid fa-right-long"></i>
+            &emsp;&emsp;@Model.ArrivalAirport
+        </h5>
+        <div class="my-3">
+            <p class="card-tex">
+                Departure Date: @Model.DepartureDate &emsp;&emsp;
                 <i class="fa-solid fa-right-long"></i>
-                &emsp;&emsp;@Model.ArrivalAirport
-            </h5>
-            <div class="my-3">
-                <p class="card-tex">
-                    Departure Date: @Model.DepartureDate &emsp;&emsp;
-                    <i class="fa-solid fa-right-long"></i>
-                    &emsp;&emsp; Return Date: @Model.ReturnDate
-                </p>
-                <p class="card-text"></p>
-            </div>
-
-            <div class="btn-group">
-                <a class="btn btn-primary" asp-controller="Home" asp-action="Index">
-                    <i class="fa-solid fa-house"></i> Home</a>
-                <a class="btn btn-outline-primary" asp-controller="Flight" asp-action="Index">
-                    <i class="fa-solid fa-plane"></i>
-                    Flights</a>
-            </div>
-
-            <a asp-action="Get" asp-route-id="@Model.FlightId" class="btn btn-primary">
-                <i class="fa-solid fa-arrow-right"></i>
-                Go somewhere</a>
+                &emsp;&emsp; Return Date: @Model.ReturnDate
+            </p>
+            <p class="card-text"></p>
         </div>
+
+        <div class="btn-group">
+            <a class="btn btn-primary" asp-controller="Home" asp-action="Index">
+                <i class="fa-solid fa-house"></i> Home</a>
+            <a class="btn btn-outline-primary" asp-controller="Flight" asp-action="Index">
+                <i class="fa-solid fa-plane"></i>
+                Flights</a>
+        </div>
+
+        <a asp-action="Get" asp-route-id="@Model.FlightId" class="btn btn-primary">
+            <i class="fa-solid fa-arrow-right"></i>
+            Go somewhere</a>
     </div>
+</div>

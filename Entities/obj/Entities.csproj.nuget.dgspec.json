@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ceydapolat/Development/VSCode/FlightTicketApp/FlightTicketApp/Entities/Entities.csproj": {}
+    "/Users/ceydapolat/Development/VSCode/Flight-Ticket-App/Entities/Entities.csproj": {}
   },
   "projects": {
-    "/Users/ceydapolat/Development/VSCode/FlightTicketApp/FlightTicketApp/Entities/Entities.csproj": {
+    "/Users/ceydapolat/Development/VSCode/Flight-Ticket-App/Entities/Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ceydapolat/Development/VSCode/FlightTicketApp/FlightTicketApp/Entities/Entities.csproj",
+        "projectUniqueName": "/Users/ceydapolat/Development/VSCode/Flight-Ticket-App/Entities/Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "/Users/ceydapolat/Development/VSCode/FlightTicketApp/FlightTicketApp/Entities/Entities.csproj",
+        "projectPath": "/Users/ceydapolat/Development/VSCode/Flight-Ticket-App/Entities/Entities.csproj",
         "packagesPath": "/Users/ceydapolat/.nuget/packages/",
-        "outputPath": "/Users/ceydapolat/Development/VSCode/FlightTicketApp/FlightTicketApp/Entities/obj/",
+        "outputPath": "/Users/ceydapolat/Development/VSCode/Flight-Ticket-App/Entities/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ceydapolat/.nuget/NuGet/NuGet.Config"
