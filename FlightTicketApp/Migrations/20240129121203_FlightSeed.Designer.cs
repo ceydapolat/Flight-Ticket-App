@@ -11,7 +11,7 @@ using Repositories;
 namespace FlightTicketApp.Migrations
 {
     [DbContext(typeof(RepositoryContext))]
-    [Migration("20240129104948_FlightSeed")]
+    [Migration("20240129121203_FlightSeed")]
     partial class FlightSeed
     {
         /// <inheritdoc />
