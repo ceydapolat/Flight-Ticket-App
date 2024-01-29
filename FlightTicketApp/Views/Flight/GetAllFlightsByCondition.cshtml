@@ -1,0 +1,91 @@
+@model FlightsViewModel
+
+<h4 class="my-5 text-white bg-danger text-center" style="width: 16rem; height: 2rem;">Outbound Flight</h4>
+<div class="text-danger" asp-validation-summary="All"></div>
+
+@{
+    if (TempData.Keys.Any())
+    {
+        var errorMessages = TempData.Keys.Where(m => m.Equals("NoAvailableFlight"));
+
+        <ul>
+            @foreach (var message in errorMessages)
+            {
+                <li class="text-danger">@message</li>
+            }
+        </ul>
+    }
+}
+
+<div>
+    @if (Model is not null)
+    {
+        foreach (Flight flight in Model.Flights)
+        {
+            <div class="card my-5">
+                <div class="card-body row">
+                    <h5 class="card-title col-4 text-center">
+                        <i class="fa-solid fa-location-pin"></i>
+                        &emsp;@Model.Airports.Where(a => a.AirportId == @flight.DepartureAirportId).Select(a =>
+                           a.DepartureAirport).First()
+                    </h5>
+
+                    <h5 class="card-title col-4 text-center">
+                        <p>-----------------------------------></p>
+                    </h5>
+
+                    <h5 class="card-title col-4 text-center">
+                        <i class="fa-solid fa-location-pin"></i>
+                        &emsp;@Model.Airports.Where(a => a.AirportId == @flight.ArrivalAirportId).Select(a =>
+                           a.ArrivalAirport).First()
+                    </h5>
+
+                    <div class="my-3 row">
+                        <p class="card-text col-4 text-center">
+                            <i class="fa-solid fa-plane-departure"></i>
+                            &emsp;Departure Date: @flight.DepartureDate
+                        </p>
+                        <p class="card-text col-4 text-center"></p>
+                        <p class="card-text col-4 text-center">
+                            <i class="fa-solid fa-plane-arrival"></i>
+                            &emsp;Arrival Date: @flight.DepartureDate
+                        </p>
+                    </div>
+
+                    <div class="my-3 row">
+                        <p class="card-text col-4 text-center">
+                            <i class="fa-solid fa-clock"></i>&emsp;Departure Time: @flight.DepartureTime
+                        </p>
+                        <p class="card-text col-4 text-center"></p>
+                        <p class="card-text col-4 text-center">
+                            <i class="fa-solid fa-clock"></i>&emsp;Arrival Time: @flight.ArrivalTime
+                        </p>
+                    </div>
+
+                    @* <div class="my-3">
+            <p class="card-text">
+            Return Date: @flight.ReturnDate
+            </p>
+            <p class="card-text"></p>
+            </div> *@
+
+                    <div style="text-align: right;">
+                        <div class="btn-group">
+                            <a class="btn btn-primary" asp-controller="Flight" asp-action="Get" asp-route-id="@flight.FlightId">
+                                <i class="fa-solid fa-plane"></i> Select Flight</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+
+
+    <div class="btn-group my-5">
+        <a class="btn btn-primary" asp-controller="Home" asp-action="Index">
+            <i class="fa-solid fa-house"></i> Home</a>
+        <a class="btn btn-outline-primary" asp-controller="Flight" asp-action="Index">
+            <i class="fa-solid fa-plane"></i>
+            Flights</a>
+    </div>
+</div>

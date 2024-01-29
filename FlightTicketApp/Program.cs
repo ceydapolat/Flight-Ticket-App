@@ -15,9 +15,11 @@ builder.Services.AddDbContext<RepositoryContext>(options =>
 
 builder.Services.AddScoped<IRepositoryManager, RepositoryManager>();
 builder.Services.AddScoped<IFlightRepository, FlightRepository>();
+builder.Services.AddScoped<IAirportRepository, AirportRepository>();
 
 builder.Services.AddScoped<IServiceManager, ServiceManager>();
 builder.Services.AddScoped<IFlightService, FlightManager>();
+builder.Services.AddScoped<IAirportService, AirportManager>();
 
 builder.Services.AddAutoMapper(typeof(Program));
 

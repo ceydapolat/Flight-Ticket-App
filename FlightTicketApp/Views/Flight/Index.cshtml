@@ -1,34 +1,80 @@
-@model IQueryable<Flight>
+@model FlightsViewModel
 
 <div class="my-5"></div>
 
-<form action="GetOneFlightByCondition" method="post">
-    <label name="DepartureAirport">Departure Airport:</label> &nbsp;
+<div class="my-5 text-white text-center bg-secondary rounded" style="width: 14rem; height: 3rem;">
+    <h2>Search Flight</h2>
+</div>
+
+@{
+    if (TempData.Keys.Any())
+    {
+        var errorMessages = TempData.Where(m => m.Key.Contains("ErrorMessage"));
+
+        <ul>
+            @foreach (var message in errorMessages)
+            {
+                <li class="text-danger">@message.Value</li>
+            }
+        </ul>
+    }
+}
+
+<form action="Index" method="post">
+    <div class="text-danger" asp-validation-summary="All"></div>
+
+    <label class="radio-inline">
+        <input type="radio" value="true" name="IsOneWayTicket" checked>&emsp;One way
+    </label>
+    <label class="radio-inline px-md-5">
+        <input type="radio" value="false" name="IsOneWayTicket">&emsp;Round trip
+    </label>
+
+    <div></div>
+
+    <label class="my-5" name="DepartureAirport">Departure Airport:</label> &nbsp;
     <select name="DepartureAirport" name="DepartureAirport" class="form-control-sm">
-        <option>İstanbul/Sabiha Gökçen Airport</option>
-        <option>İstanbul/İstanbul Airport</option>
-        <option>İzmir/Adnan Menderes Airport</option>
-        <option>Muğla/Dalaman Airport</option>
+        @foreach (var airport in Model.Airports)
+        {
+            <option>@airport.DepartureAirport</option>
+        }
     </select>
 
-    <label name="ArrivalAirport">Arrival Airport:</label> &nbsp;
+    <label name="ArrivalAirport">&emsp;Arrival Airport:</label> &nbsp;
     <select name="ArrivalAirport" name="ArrivalAirport" class="form-control-sm">
-        <option>İstanbul/Sabiha Gökçen Airport</option>
-        <option>İstanbul/İstanbul Airport</option>
-        <option>İzmir/Adnan Menderes Airport</option>
-        <option>Muğla/Dalaman Airport</option>
+        @foreach (var airport in Model.Airports)
+        {
+            <option>@airport.ArrivalAirport</option>
+        }
     </select>
 
-    <label name="DepartureDate">Departure Date:</label> &nbsp;
-    <input name="DepartureDate" name="DepartureDate" class="form-control-sm" type="date">
+    <label name="DepartureDate">&nbsp;Departure Date:</label> &nbsp;
+    <input name="DepartureDate" class="form-control-sm" type="date">
 
-    <label name="ReturnDate">Return Date:</label> &nbsp;
-    <input name="ReturnDate" name="ReturnDate" class="form-control-sm" type="date">
-    
-    <div class="my-3">
-        <button asp-controller="Flight" asp-action="GetOneFlightByCondition" method="GetOneFlightByCondition"
+    <label class="OneWay selectt" name="ReturnDate">&nbsp;Return Date:</label> &nbsp;
+    <input name="ReturnDate" class="form-control-sm" type="date">
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('input[type="radio"]').
+                click(
+                    function () {
+                        const inputValue =
+                            $(this).attr("value");
+                        const targetBox =
+                            $("." + inputValue);
+                        $(".selectt").
+                            not(targetBox).hide();
+                        $(targetBox).show();
+                    }
+                );
+        }); 
+    </script>
+
+    <div class="my-5 d-flex justify-content-end">
+        <button asp-controller="Flight" asp-action="GetAllFlightsByCondition" method="GetAllFlightsByCondition"
             type="submit" class="btn btn-primary">
-            Search Flights
+            Search Flights&emsp;
             <i class="fa-solid fa-arrow-right"></i>
         </button>
     </div>
