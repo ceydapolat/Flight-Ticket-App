@@ -7,5 +7,5 @@ public interface IFlightService
 {
     IEnumerable<Flight> GetAllFlights(bool trackChanges);
     Flight? GetOneFlight(int id, bool trackChanges);
-    IQueryable<Flight> Where(Expression<Func<Flight, bool>> expression);
+    IEnumerable<Flight>? GetAllFlightsByCondition(Expression<Func<Flight, bool>> expression, bool trackChanges);
 }

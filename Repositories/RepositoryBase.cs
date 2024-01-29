@@ -32,6 +32,13 @@ public abstract class RepositoryBase<T> : IRepositoryBase<T>
             ? _context.Set<T>().Where(expression).SingleOrDefault()
             : _context.Set<T>().Where(expression).AsNoTracking().SingleOrDefault();
     }
+    
+    public IEnumerable<T>? FindAllByCondition(Expression<Func<T, bool>> expression, bool trackChanges)
+    {
+        return trackChanges
+            ? _context.Set<T>().Where(expression)
+            : _context.Set<T>().Where(expression).AsNoTracking();
+    }
 
     public void Remove(T entity)
     {
@@ -41,10 +48,5 @@ public abstract class RepositoryBase<T> : IRepositoryBase<T>
     public void Update(T entity)
     {
         _context.Set<T>().Update(entity);
-    }
-
-    public IQueryable<T> Where(Expression<Func<T, bool>> expression)
-    {
-        return _context.Set<T>().Where(expression);
     }
 }

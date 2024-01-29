@@ -21,4 +21,9 @@ public class FlightRepository : RepositoryBase<Flight>, IFlightRepository
     }
 
     public void UpdateOneFlight(Flight flight) => Update(flight);
+
+    public IEnumerable<Flight>? GetAllFlightsByCondition(Expression<Func<Flight, bool>> expression, bool trackChanges)
+    {
+        return FindAllByCondition(expression, trackChanges);
+    }
 }

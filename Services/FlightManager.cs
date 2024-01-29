@@ -31,8 +31,8 @@ public class FlightManager : IFlightService
         return flight;
     }
 
-    public IQueryable<Flight> Where(Expression<Func<Flight, bool>> expression)
+    public IEnumerable<Flight>? GetAllFlightsByCondition(Expression<Func<Flight, bool>> expression, bool trackChanges)
     {
-        return _manager.Flight.Where(expression);
+        return _manager.Flight.GetAllFlightsByCondition(expression, trackChanges);
     }
 }

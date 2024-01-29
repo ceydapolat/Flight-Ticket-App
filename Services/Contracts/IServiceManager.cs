@@ -3,4 +3,5 @@
 public interface IServiceManager
 {
     IFlightService FlightService { get; }
+    IAirportService AirportService { get; }
 }
