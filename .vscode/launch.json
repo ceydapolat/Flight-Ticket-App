@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C#: FlightTicketApp [Default Configuration]",
+            "type": "dotnet",
+            "request": "launch",
+            "projectPath": "${workspaceFolder}/FlightTicketApp/FlightTicketApp.csproj",
+            "requireExactSource": false
+        }
+    ]
+}

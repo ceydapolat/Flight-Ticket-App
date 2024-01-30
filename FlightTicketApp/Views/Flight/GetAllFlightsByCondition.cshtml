@@ -1,6 +1,6 @@
 @model FlightsViewModel
 
-<h4 class="my-5 text-white bg-danger text-center" style="width: 16rem; height: 2rem;">Outbound Flight</h4>
+<h4 class="my-5 text-white bg-danger text-center rounded" style="width: 16rem; height: 2rem;">Outbound Flight</h4>
 <div class="text-danger" asp-validation-summary="All"></div>
 
 @{
@@ -71,7 +71,7 @@
 
                     <div style="text-align: right;">
                         <div class="btn-group">
-                            <a class="btn btn-primary" asp-controller="Flight" asp-action="Get" asp-route-id="@flight.FlightId">
+                            <a class="btn btn-primary" asp-controller="Flight" asp-action="GetInboundTrip" asp-route-id="@flight.FlightId">
                                 <i class="fa-solid fa-plane"></i> Select Flight</a>
                         </div>
                     </div>

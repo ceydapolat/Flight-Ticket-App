@@ -24,6 +24,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRmxpZ2h0L0dldEFsbEZsaWdodHNCeUNvbmRpdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/ceydapolat/Development/Flight-Ticket-App/FlightTicketApp/Views/Flight/GetInboundTrip.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRmxpZ2h0L0dldEluYm91bmRUcmlwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ceydapolat/Development/Flight-Ticket-App/FlightTicketApp/Views/Flight/GetOutboundAndInboundTicketsDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRmxpZ2h0L0dldE91dGJvdW5kQW5kSW5ib3VuZFRpY2tldHNEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/ceydapolat/Development/Flight-Ticket-App/FlightTicketApp/Views/Flight/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRmxpZ2h0L0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

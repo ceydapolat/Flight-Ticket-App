@@ -1,0 +1,107 @@
+@model FlightViewModel
+
+<h4 class="my-5 text-white bg-success text-center rounded" style="width: 18rem; height: 2rem;">Selected Ticket Details</h4>
+<div class="text-primary" asp-validation-summary="All"></div>
+
+<div>
+    @if (Model is not null)
+    {
+        <h5 class="my-5 text-white bg-secondary text-center rounded" style="width: 16rem; height: 1.8rem;">Outbound Flight Ticket</h5>
+
+        <div class="card my-5">
+            <div class="card-body row">
+                <h5 class="card-title col-4 text-center">
+                    <i class="fa-solid fa-location-pin"></i>
+                    &emsp;@Model.Airports.Where(a => a.AirportId == @Model.Flight.DepartureAirportId).Select(a =>
+                       a.DepartureAirport).First()
+                </h5>
+
+                <h5 class="card-title col-4 text-center">
+                    <p>-----------------------------------></p>
+                </h5>
+
+                <h5 class="card-title col-4 text-center">
+                    <i class="fa-solid fa-location-pin"></i>
+                    &emsp;@Model.Airports.Where(a => a.AirportId == @Model.Flight.ArrivalAirportId).Select(a =>
+                       a.ArrivalAirport).First()
+                </h5>
+
+                <div class="my-3 row">
+                    <p class="card-text col-4 text-center">
+                        <i class="fa-solid fa-plane-departure"></i>
+                        &emsp;Departure Date: @Model.Flight.DepartureDate
+                    </p>
+                    <p class="card-text col-4 text-center"></p>
+                    <p class="card-text col-4 text-center">
+                        <i class="fa-solid fa-plane-arrival"></i>
+                        &emsp;Arrival Date: @Model.Flight.DepartureDate
+                    </p>
+                </div>
+
+                <div class="my-3 row">
+                    <p class="card-text col-4 text-center">
+                        <i class="fa-solid fa-clock"></i>&emsp;Departure Time: @Model.Flight.DepartureTime
+                    </p>
+                    <p class="card-text col-4 text-center"></p>
+                    <p class="card-text col-4 text-center">
+                        <i class="fa-solid fa-clock"></i>&emsp;Arrival Time: @Model.Flight.ArrivalTime
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <h5 class="my-5 text-white bg-secondary text-center rounded" style="width: 16rem; height: 1.8rem;">Inound Trip Ticket</h5>
+
+        <div class="card my-5">
+            <div class="card-body row">
+                <h5 class="card-title col-4 text-center">
+                    <i class="fa-solid fa-location-pin"></i>
+                    &emsp;@Model.Airports.Where(a => a.AirportId == @Model.Flight.ArrivalAirportId).Select(a =>
+                       a.ArrivalAirport).First()
+                </h5>
+
+                <h5 class="card-title col-4 text-center">
+                    <p>-----------------------------------></p>
+                </h5>
+
+                <h5 class="card-title col-4 text-center">
+                    <i class="fa-solid fa-location-pin"></i>
+                    &emsp;@Model.Airports.Where(a => a.AirportId == @Model.Flight.DepartureAirportId).Select(a =>
+                       a.DepartureAirport).First()
+                </h5>
+
+                <div class="my-3 row">
+                    <p class="card-text col-4 text-center">
+                        <i class="fa-solid fa-plane-departure"></i>
+                        &emsp;Departure Date: @Model.Flight.ReturnDate
+                    </p>
+                    <p class="card-text col-4 text-center"></p>
+                    <p class="card-text col-4 text-center">
+                        <i class="fa-solid fa-plane-arrival"></i>
+                        &emsp;Arrival Date: @Model.Flight.ReturnDate
+                    </p>
+                </div>
+
+                <div class="my-3 row">
+                    <p class="card-text col-4 text-center">
+                        <i class="fa-solid fa-clock"></i>&emsp;Departure Time: @Model.Flight.DepartureTime
+                    </p>
+                    <p class="card-text col-4 text-center"></p>
+                    <p class="card-text col-4 text-center">
+                        <i class="fa-solid fa-clock"></i>&emsp;Arrival Time: @Model.Flight.ArrivalTime
+                    </p>
+                </div>
+            </div>
+        </div>
+    }
+
+
+    <div class="btn-group my-5">
+        <a class="btn btn-primary" asp-controller="Home" asp-action="Index">
+            <i class="fa-solid fa-house"></i>
+            Home</a>
+        <a class="btn btn-outline-primary" asp-controller="Flight" asp-action="Index">
+            <i class="fa-solid fa-plane"></i>
+            Flights</a>
+    </div>
+</div>

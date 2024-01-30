@@ -37,6 +37,47 @@ public class FlightController : Controller
             var departureAirport = _manager.AirportService.GetOneAirportByCondition(a => a.AirportId.Equals(flightModel.DepartureAirportId), false);
             var arrivalAirport = _manager.AirportService.GetOneAirportByCondition(a => a.AirportId.Equals(flightModel.ArrivalAirportId), false);
 
+            FlightViewModel fvm = new FlightViewModel()
+            {
+                Airports = _airports,
+                Flight = flightModel
+            };
+
+            return View(fvm);
+        }
+
+        return View();
+    }
+
+    public IActionResult GetInboundTrip([FromRoute(Name = "id")] int id)
+    {
+        if (ModelState.IsValid)
+        {
+            var flightModel = _manager.FlightService.GetOneFlight(id, false);
+
+            var departureAirport = _manager.AirportService.GetOneAirportByCondition(a => a.AirportId.Equals(flightModel.DepartureAirportId), false);
+            var arrivalAirport = _manager.AirportService.GetOneAirportByCondition(a => a.AirportId.Equals(flightModel.ArrivalAirportId), false);
+
+            FlightViewModel fvm = new FlightViewModel()
+            {
+                Airports = _airports,
+                Flight = flightModel
+            };
+
+            return View(fvm);
+        }
+
+        return View();
+    }
+
+    public IActionResult GetOutboundAndInboundTicketsDetail([FromRoute(Name = "id")] int id)
+    {
+        if (ModelState.IsValid)
+        {
+            var flightModel = _manager.FlightService.GetOneFlight(id, false);
+
+            var departureAirport = _manager.AirportService.GetOneAirportByCondition(a => a.AirportId.Equals(flightModel.DepartureAirportId), false);
+            var arrivalAirport = _manager.AirportService.GetOneAirportByCondition(a => a.AirportId.Equals(flightModel.ArrivalAirportId), false);
 
             FlightViewModel fvm = new FlightViewModel()
             {

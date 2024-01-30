@@ -23,4 +23,8 @@
     <Folder Include="Models/" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="Views/Flight/GetOutboundAndInboundTicketsDetail.cshtml" />
+  </ItemGroup>
+
 </Project>

@@ -11,7 +11,7 @@ using Repositories;
 namespace FlightTicketApp.Migrations
 {
     [DbContext(typeof(RepositoryContext))]
-    [Migration("20240129121203_FlightSeed")]
+    [Migration("20240129173234_FlightSeed")]
     partial class FlightSeed
     {
         /// <inheritdoc />
@@ -121,7 +121,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 2,
                             DepartureDate = new DateOnly(2024, 2, 2),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 6)
                         },
                         new
@@ -133,7 +133,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 1,
                             DepartureDate = new DateOnly(2024, 2, 1),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 5)
                         },
                         new
@@ -145,7 +145,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 1,
                             DepartureDate = new DateOnly(2024, 2, 3),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 8)
                         },
                         new
@@ -157,7 +157,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 2,
                             DepartureDate = new DateOnly(2024, 2, 4),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 10)
                         },
                         new
@@ -169,7 +169,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 1,
                             DepartureDate = new DateOnly(2024, 2, 1),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 5)
                         },
                         new
@@ -181,7 +181,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 2,
                             DepartureDate = new DateOnly(2024, 2, 2),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 6)
                         },
                         new
@@ -193,7 +193,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 1,
                             DepartureDate = new DateOnly(2024, 2, 3),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 8)
                         },
                         new
@@ -205,7 +205,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 2,
                             DepartureDate = new DateOnly(2024, 2, 4),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 10)
                         },
                         new
@@ -217,7 +217,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 3,
                             DepartureDate = new DateOnly(2024, 2, 1),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 5)
                         },
                         new
@@ -229,7 +229,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 3,
                             DepartureDate = new DateOnly(2024, 2, 2),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 6)
                         },
                         new
@@ -241,7 +241,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 4,
                             DepartureDate = new DateOnly(2024, 2, 3),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 8)
                         },
                         new
@@ -253,7 +253,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 4,
                             DepartureDate = new DateOnly(2024, 2, 4),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 10)
                         },
                         new
@@ -265,7 +265,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 5,
                             DepartureDate = new DateOnly(2024, 2, 1),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 5)
                         },
                         new
@@ -277,7 +277,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 5,
                             DepartureDate = new DateOnly(2024, 2, 2),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 6)
                         },
                         new
@@ -289,7 +289,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 6,
                             DepartureDate = new DateOnly(2024, 2, 3),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 8)
                         },
                         new
@@ -301,7 +301,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 6,
                             DepartureDate = new DateOnly(2024, 2, 4),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 10)
                         },
                         new
@@ -313,7 +313,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 3,
                             DepartureDate = new DateOnly(2024, 2, 4),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 10)
                         },
                         new
@@ -325,7 +325,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 3,
                             DepartureDate = new DateOnly(2024, 2, 5),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 10)
                         },
                         new
@@ -337,7 +337,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 3,
                             DepartureDate = new DateOnly(2024, 2, 6),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 10)
                         },
                         new
@@ -349,7 +349,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 4,
                             DepartureDate = new DateOnly(2024, 1, 31),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 4)
                         },
                         new
@@ -361,7 +361,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 4,
                             DepartureDate = new DateOnly(2024, 2, 1),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 5)
                         },
                         new
@@ -373,7 +373,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 4,
                             DepartureDate = new DateOnly(2024, 2, 4),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 10)
                         },
                         new
@@ -385,7 +385,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 5,
                             DepartureDate = new DateOnly(2024, 2, 5),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 10)
                         },
                         new
@@ -397,7 +397,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 6,
                             DepartureDate = new DateOnly(2024, 2, 6),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 10)
                         },
                         new
@@ -409,7 +409,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 5,
                             DepartureDate = new DateOnly(2024, 1, 31),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 4)
                         },
                         new
@@ -421,7 +421,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 6,
                             DepartureDate = new DateOnly(2024, 2, 1),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 5)
                         },
                         new
@@ -433,7 +433,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 1,
                             DepartureDate = new DateOnly(2024, 2, 1),
                             DepartureTime = new TimeOnly(12, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 5)
                         },
                         new
@@ -445,7 +445,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 2,
                             DepartureDate = new DateOnly(2024, 2, 2),
                             DepartureTime = new TimeOnly(12, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 6)
                         },
                         new
@@ -457,7 +457,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 1,
                             DepartureDate = new DateOnly(2024, 2, 3),
                             DepartureTime = new TimeOnly(12, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 8)
                         },
                         new
@@ -469,7 +469,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 2,
                             DepartureDate = new DateOnly(2024, 2, 4),
                             DepartureTime = new TimeOnly(12, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 10)
                         },
                         new
@@ -481,7 +481,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 1,
                             DepartureDate = new DateOnly(2024, 2, 1),
                             DepartureTime = new TimeOnly(12, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 5)
                         },
                         new
@@ -493,7 +493,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 2,
                             DepartureDate = new DateOnly(2024, 2, 2),
                             DepartureTime = new TimeOnly(12, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 6)
                         },
                         new
@@ -505,7 +505,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 1,
                             DepartureDate = new DateOnly(2024, 2, 3),
                             DepartureTime = new TimeOnly(12, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 8)
                         },
                         new
@@ -517,7 +517,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 2,
                             DepartureDate = new DateOnly(2024, 2, 5),
                             DepartureTime = new TimeOnly(12, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 10)
                         },
                         new
@@ -529,7 +529,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 3,
                             DepartureDate = new DateOnly(2024, 2, 1),
                             DepartureTime = new TimeOnly(12, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(524, 2, 5)
                         },
                         new
@@ -541,7 +541,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 3,
                             DepartureDate = new DateOnly(2024, 2, 2),
                             DepartureTime = new TimeOnly(12, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 6)
                         },
                         new
@@ -553,7 +553,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 4,
                             DepartureDate = new DateOnly(2024, 2, 3),
                             DepartureTime = new TimeOnly(12, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 8)
                         },
                         new
@@ -565,7 +565,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 4,
                             DepartureDate = new DateOnly(2024, 2, 4),
                             DepartureTime = new TimeOnly(12, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 10)
                         },
                         new
@@ -577,7 +577,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 5,
                             DepartureDate = new DateOnly(2024, 2, 1),
                             DepartureTime = new TimeOnly(12, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 5)
                         },
                         new
@@ -589,7 +589,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 5,
                             DepartureDate = new DateOnly(2024, 2, 2),
                             DepartureTime = new TimeOnly(12, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 6)
                         },
                         new
@@ -601,7 +601,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 6,
                             DepartureDate = new DateOnly(2024, 2, 3),
                             DepartureTime = new TimeOnly(12, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 8)
                         },
                         new
@@ -613,7 +613,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 6,
                             DepartureDate = new DateOnly(2024, 2, 4),
                             DepartureTime = new TimeOnly(12, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 10)
                         },
                         new
@@ -625,7 +625,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 3,
                             DepartureDate = new DateOnly(2024, 2, 4),
                             DepartureTime = new TimeOnly(12, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 10)
                         },
                         new
@@ -637,7 +637,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 3,
                             DepartureDate = new DateOnly(2024, 2, 5),
                             DepartureTime = new TimeOnly(12, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 10)
                         },
                         new
@@ -649,7 +649,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 3,
                             DepartureDate = new DateOnly(2024, 2, 6),
                             DepartureTime = new TimeOnly(12, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 10)
                         },
                         new
@@ -661,7 +661,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 4,
                             DepartureDate = new DateOnly(2024, 1, 31),
                             DepartureTime = new TimeOnly(12, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 4)
                         },
                         new
@@ -673,7 +673,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 4,
                             DepartureDate = new DateOnly(2024, 2, 1),
                             DepartureTime = new TimeOnly(12, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 5)
                         },
                         new
@@ -685,7 +685,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 6,
                             DepartureDate = new DateOnly(2024, 2, 6),
                             DepartureTime = new TimeOnly(12, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 10)
                         },
                         new
@@ -697,7 +697,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 5,
                             DepartureDate = new DateOnly(2024, 1, 31),
                             DepartureTime = new TimeOnly(12, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 4)
                         },
                         new
@@ -709,7 +709,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 6,
                             DepartureDate = new DateOnly(2024, 2, 1),
                             DepartureTime = new TimeOnly(12, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 5)
                         },
                         new
@@ -721,7 +721,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 1,
                             DepartureDate = new DateOnly(2024, 2, 1),
                             DepartureTime = new TimeOnly(14, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 5)
                         },
                         new
@@ -733,7 +733,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 2,
                             DepartureDate = new DateOnly(2024, 2, 2),
                             DepartureTime = new TimeOnly(14, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 6)
                         },
                         new
@@ -745,7 +745,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 1,
                             DepartureDate = new DateOnly(2024, 2, 3),
                             DepartureTime = new TimeOnly(14, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 8)
                         },
                         new
@@ -757,7 +757,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 2,
                             DepartureDate = new DateOnly(2024, 2, 4),
                             DepartureTime = new TimeOnly(14, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 10)
                         },
                         new
@@ -769,7 +769,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 1,
                             DepartureDate = new DateOnly(2024, 2, 1),
                             DepartureTime = new TimeOnly(14, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 5)
                         },
                         new
@@ -781,7 +781,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 2,
                             DepartureDate = new DateOnly(2024, 2, 2),
                             DepartureTime = new TimeOnly(14, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 6)
                         },
                         new
@@ -793,7 +793,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 1,
                             DepartureDate = new DateOnly(2024, 2, 3),
                             DepartureTime = new TimeOnly(14, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 8)
                         },
                         new
@@ -805,7 +805,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 2,
                             DepartureDate = new DateOnly(2024, 2, 4),
                             DepartureTime = new TimeOnly(14, 0, 0),
-                            IsOneWayTicket = true,
+                            IsOneWayTicket = false,
                             ReturnDate = new DateOnly(2024, 2, 10)
                         },
                         new
@@ -817,7 +817,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 2,
                             DepartureDate = new DateOnly(2024, 2, 2),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = false,
+                            IsOneWayTicket = true,
                             ReturnDate = new DateOnly(2024, 2, 6)
                         },
                         new
@@ -829,7 +829,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 1,
                             DepartureDate = new DateOnly(2024, 2, 1),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = false,
+                            IsOneWayTicket = true,
                             ReturnDate = new DateOnly(2024, 2, 5)
                         },
                         new
@@ -841,7 +841,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 1,
                             DepartureDate = new DateOnly(2024, 2, 3),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = false,
+                            IsOneWayTicket = true,
                             ReturnDate = new DateOnly(2024, 2, 8)
                         },
                         new
@@ -853,7 +853,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 2,
                             DepartureDate = new DateOnly(2024, 2, 4),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = false,
+                            IsOneWayTicket = true,
                             ReturnDate = new DateOnly(2024, 2, 10)
                         },
                         new
@@ -865,7 +865,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 1,
                             DepartureDate = new DateOnly(2024, 2, 1),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = false,
+                            IsOneWayTicket = true,
                             ReturnDate = new DateOnly(2024, 2, 5)
                         },
                         new
@@ -877,7 +877,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 2,
                             DepartureDate = new DateOnly(2024, 2, 2),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = false,
+                            IsOneWayTicket = true,
                             ReturnDate = new DateOnly(2024, 2, 6)
                         },
                         new
@@ -889,7 +889,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 1,
                             DepartureDate = new DateOnly(2024, 2, 3),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = false,
+                            IsOneWayTicket = true,
                             ReturnDate = new DateOnly(2024, 2, 8)
                         },
                         new
@@ -901,7 +901,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 2,
                             DepartureDate = new DateOnly(2024, 2, 4),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = false,
+                            IsOneWayTicket = true,
                             ReturnDate = new DateOnly(2024, 2, 10)
                         },
                         new
@@ -913,7 +913,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 3,
                             DepartureDate = new DateOnly(2024, 2, 1),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = false,
+                            IsOneWayTicket = true,
                             ReturnDate = new DateOnly(2024, 2, 5)
                         },
                         new
@@ -925,7 +925,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 3,
                             DepartureDate = new DateOnly(2024, 2, 2),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = false,
+                            IsOneWayTicket = true,
                             ReturnDate = new DateOnly(2024, 2, 6)
                         },
                         new
@@ -937,7 +937,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 4,
                             DepartureDate = new DateOnly(2024, 2, 3),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = false,
+                            IsOneWayTicket = true,
                             ReturnDate = new DateOnly(2024, 2, 8)
                         },
                         new
@@ -949,7 +949,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 4,
                             DepartureDate = new DateOnly(2024, 2, 4),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = false,
+                            IsOneWayTicket = true,
                             ReturnDate = new DateOnly(2024, 2, 10)
                         },
                         new
@@ -961,7 +961,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 5,
                             DepartureDate = new DateOnly(2024, 2, 1),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = false,
+                            IsOneWayTicket = true,
                             ReturnDate = new DateOnly(2024, 2, 5)
                         },
                         new
@@ -973,7 +973,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 5,
                             DepartureDate = new DateOnly(2024, 2, 2),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = false,
+                            IsOneWayTicket = true,
                             ReturnDate = new DateOnly(2024, 2, 6)
                         },
                         new
@@ -985,7 +985,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 6,
                             DepartureDate = new DateOnly(2024, 2, 3),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = false,
+                            IsOneWayTicket = true,
                             ReturnDate = new DateOnly(2024, 2, 8)
                         },
                         new
@@ -997,7 +997,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 6,
                             DepartureDate = new DateOnly(2024, 2, 4),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = false,
+                            IsOneWayTicket = true,
                             ReturnDate = new DateOnly(2024, 2, 10)
                         },
                         new
@@ -1009,7 +1009,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 3,
                             DepartureDate = new DateOnly(2024, 2, 4),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = false,
+                            IsOneWayTicket = true,
                             ReturnDate = new DateOnly(2024, 2, 10)
                         },
                         new
@@ -1021,7 +1021,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 3,
                             DepartureDate = new DateOnly(2024, 2, 5),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = false,
+                            IsOneWayTicket = true,
                             ReturnDate = new DateOnly(2024, 2, 10)
                         },
                         new
@@ -1033,7 +1033,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 3,
                             DepartureDate = new DateOnly(2024, 2, 6),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = false,
+                            IsOneWayTicket = true,
                             ReturnDate = new DateOnly(2024, 2, 10)
                         },
                         new
@@ -1045,7 +1045,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 4,
                             DepartureDate = new DateOnly(2024, 1, 31),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = false,
+                            IsOneWayTicket = true,
                             ReturnDate = new DateOnly(2024, 2, 4)
                         },
                         new
@@ -1057,7 +1057,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 4,
                             DepartureDate = new DateOnly(2024, 2, 1),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = false,
+                            IsOneWayTicket = true,
                             ReturnDate = new DateOnly(2024, 2, 5)
                         },
                         new
@@ -1069,7 +1069,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 4,
                             DepartureDate = new DateOnly(2024, 2, 4),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = false,
+                            IsOneWayTicket = true,
                             ReturnDate = new DateOnly(2024, 2, 10)
                         },
                         new
@@ -1081,7 +1081,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 5,
                             DepartureDate = new DateOnly(2024, 2, 5),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = false,
+                            IsOneWayTicket = true,
                             ReturnDate = new DateOnly(2024, 2, 10)
                         },
                         new
@@ -1093,7 +1093,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 6,
                             DepartureDate = new DateOnly(2024, 2, 6),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = false,
+                            IsOneWayTicket = true,
                             ReturnDate = new DateOnly(2024, 2, 10)
                         },
                         new
@@ -1105,7 +1105,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 5,
                             DepartureDate = new DateOnly(2024, 1, 31),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = false,
+                            IsOneWayTicket = true,
                             ReturnDate = new DateOnly(2024, 2, 4)
                         },
                         new
@@ -1117,7 +1117,7 @@ namespace FlightTicketApp.Migrations
                             DepartureAirportId = 6,
                             DepartureDate = new DateOnly(2024, 2, 1),
                             DepartureTime = new TimeOnly(10, 0, 0),
-                            IsOneWayTicket = false,
+                            IsOneWayTicket = true,
                             ReturnDate = new DateOnly(2024, 2, 5)
                         });
                 });

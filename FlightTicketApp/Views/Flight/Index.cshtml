@@ -24,10 +24,10 @@
     <div class="text-danger" asp-validation-summary="All"></div>
 
     <label class="radio-inline">
-        <input type="radio" value="true" name="IsOneWayTicket" checked>&emsp;One way
+        <input type="radio" value="true" name="IsOneWayTicket" >&emsp;One way
     </label>
     <label class="radio-inline px-md-5">
-        <input type="radio" value="false" name="IsOneWayTicket">&emsp;Round trip
+        <input type="radio" value="false" name="IsOneWayTicket" checked>&emsp;Round trip
     </label>
 
     <div></div>
@@ -51,25 +51,8 @@
     <label name="DepartureDate">&nbsp;Departure Date:</label> &nbsp;
     <input name="DepartureDate" class="form-control-sm" type="date">
 
-    <label class="OneWay selectt" name="ReturnDate">&nbsp;Return Date:</label> &nbsp;
+    <label name="ReturnDate">&nbsp;Return Date:</label> &nbsp;
     <input name="ReturnDate" class="form-control-sm" type="date">
-
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('input[type="radio"]').
-                click(
-                    function () {
-                        const inputValue =
-                            $(this).attr("value");
-                        const targetBox =
-                            $("." + inputValue);
-                        $(".selectt").
-                            not(targetBox).hide();
-                        $(targetBox).show();
-                    }
-                );
-        }); 
-    </script>
 
     <div class="my-5 d-flex justify-content-end">
         <button asp-controller="Flight" asp-action="GetAllFlightsByCondition" method="GetAllFlightsByCondition"

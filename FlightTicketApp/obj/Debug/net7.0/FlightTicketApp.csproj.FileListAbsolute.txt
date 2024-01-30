@@ -72,9 +72,6 @@
 /Users/ceydapolat/Development/VSCode/Flight-Ticket-App/FlightTicketApp/obj/Debug/net7.0/FlightTicketApp.pdb
 /Users/ceydapolat/Development/VSCode/Flight-Ticket-App/FlightTicketApp/obj/Debug/net7.0/FlightTicketApp.genruntimeconfig.cache
 /Users/ceydapolat/Development/VSCode/Flight-Ticket-App/FlightTicketApp/obj/Debug/net7.0/ref/FlightTicketApp.dll
-/Users/ceydapolat/Development/Flight-Ticket-App/FlightTicketApp/obj/Debug/net7.0/FlightTicketApp.dll
-/Users/ceydapolat/Development/Flight-Ticket-App/FlightTicketApp/obj/Debug/net7.0/refint/FlightTicketApp.dll
-/Users/ceydapolat/Development/Flight-Ticket-App/FlightTicketApp/obj/Debug/net7.0/FlightTicketApp.pdb
 /Users/ceydapolat/Development/Flight-Ticket-App/FlightTicketApp/bin/Debug/net7.0/appsettings.Development.json
 /Users/ceydapolat/Development/Flight-Ticket-App/FlightTicketApp/bin/Debug/net7.0/appsettings.json
 /Users/ceydapolat/Development/Flight-Ticket-App/FlightTicketApp/bin/Debug/net7.0/libman.json
@@ -144,5 +141,8 @@
 /Users/ceydapolat/Development/Flight-Ticket-App/FlightTicketApp/obj/Debug/net7.0/staticwebassets.development.json
 /Users/ceydapolat/Development/Flight-Ticket-App/FlightTicketApp/obj/Debug/net7.0/scopedcss/bundle/FlightTicketApp.styles.css
 /Users/ceydapolat/Development/Flight-Ticket-App/FlightTicketApp/obj/Debug/net7.0/FlightTicketApp.csproj.CopyComplete
+/Users/ceydapolat/Development/Flight-Ticket-App/FlightTicketApp/obj/Debug/net7.0/FlightTicketApp.dll
+/Users/ceydapolat/Development/Flight-Ticket-App/FlightTicketApp/obj/Debug/net7.0/refint/FlightTicketApp.dll
+/Users/ceydapolat/Development/Flight-Ticket-App/FlightTicketApp/obj/Debug/net7.0/FlightTicketApp.pdb
 /Users/ceydapolat/Development/Flight-Ticket-App/FlightTicketApp/obj/Debug/net7.0/FlightTicketApp.genruntimeconfig.cache
 /Users/ceydapolat/Development/Flight-Ticket-App/FlightTicketApp/obj/Debug/net7.0/ref/FlightTicketApp.dll
