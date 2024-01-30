@@ -105,12 +105,12 @@ public class FlightController : Controller
 
         if (flight.DepartureDate.Equals(defaultDateOnly) || flight.ReturnDate.Equals(defaultDateOnly))
         {
-            ModelState.AddModelError("Error", "Please select date.");
+            ModelState.AddModelError("Flights", "Please select date.");
             TempData["DateNotGivenErrorMessage"] = "Please select date.";
         }
         else if (flight.DepartureDate < currentDate || flight.ReturnDate < currentDate)
         {
-            ModelState.AddModelError("Error", "Not allowed to enter past date.");
+            ModelState.AddModelError("Flights", "Not allowed to enter past date.");
             TempData["PastDateErrorMessage"] = "Not allowed to enter past date.";
         }
 
@@ -139,7 +139,7 @@ public class FlightController : Controller
                 Flights = flightModel
             };
 
-            return View(fvm);
+            return View("SearchFlights", fvm);
         }
 
         return RedirectToAction("Index");
