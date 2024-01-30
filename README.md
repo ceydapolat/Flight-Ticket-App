@@ -1,5 +1,7 @@
 # FlightTicketApp
 
+  Application works with Round trip option for now!
+
 ## You can use following inputs to test the application:
 
 - **Departure Airport:** İstanbul/Sabiha Gökçen Airport   **Arrival Airport:** İzmir/Adnan Menderes Airport   **Departure Date:** 2024-02-01   **Return Date:** 2024-02-05
