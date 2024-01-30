@@ -20,7 +20,7 @@
     }
 }
 
-<form action="Index" method="post">
+<form asp-action="SearchFlights" method="post">
     <div class="text-danger" asp-validation-summary="All"></div>
 
     <label class="radio-inline">
@@ -55,7 +55,7 @@
     <input name="ReturnDate" class="form-control-sm" type="date">
 
     <div class="my-5 d-flex justify-content-end">
-        <button asp-controller="Flight" asp-action="GetAllFlightsByCondition" method="GetAllFlightsByCondition"
+        <button 
             type="submit" class="btn btn-primary">
             Search Flights&emsp;
             <i class="fa-solid fa-arrow-right"></i>

@@ -4,6 +4,8 @@ using Services;
 
 namespace FlightTicketApp;
 
+[ApiController]
+[Route("api/[controller]")]
 public class FlightController : Controller
 {
     private readonly IServiceManager _manager;
@@ -28,6 +30,7 @@ public class FlightController : Controller
         return View(fvm);
     }
 
+    [HttpGet("get/{id}")]
     public IActionResult Get([FromRoute(Name = "id")] int id)
     {
         if (ModelState.IsValid)
@@ -49,6 +52,7 @@ public class FlightController : Controller
         return View();
     }
 
+    [HttpGet("getinboundtrip/{id}")]
     public IActionResult GetInboundTrip([FromRoute(Name = "id")] int id)
     {
         if (ModelState.IsValid)
@@ -70,6 +74,7 @@ public class FlightController : Controller
         return View();
     }
 
+    [HttpGet("getoutboundandinboundticketsdetail/{id}")]
     public IActionResult GetOutboundAndInboundTicketsDetail([FromRoute(Name = "id")] int id)
     {
         if (ModelState.IsValid)
@@ -91,7 +96,9 @@ public class FlightController : Controller
         return View();
     }
 
-    public IActionResult GetAllFlightsByCondition(Airport airport, Flight flight)
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public IActionResult SearchFlights([FromForm] Airport airport, [FromForm] Flight flight)
     {
         var currentDate = DateOnly.FromDateTime(DateTime.Now);
         var defaultDateOnly = new DateOnly();
