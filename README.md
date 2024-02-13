@@ -1,20 +1,7 @@
 # FlightTicketApp
 
   Application works with Round trip option for now!
-
-## You can use following inputs to test the application:
-
-- **Departure Airport:** İstanbul/Sabiha Gökçen Airport   **Arrival Airport:** İzmir/Adnan Menderes Airport   **Departure Date:** 2024-02-01   **Return Date:** 2024-02-05
-- **Departure Airport:** İstanbul/İstanbul Airport   **Arrival Airport:** Muğla/Dalaman Airport   **Departure Date:** 2024-02-04   **Return Date:** 2024-02-10
-- **Departure Airport:** İzmir/Adnan Menderes Airport   **Arrival Airport:** İstanbul/İstanbul Airport    **Departure Date:** 2024-02-02    **Return Date:** 2024-02-06
-- **Departure Airport:** Muğla/Dalaman Airport   **Arrival Airport:** Mersin/Çukurova Airport   **Departure Date:** 2024-02-01   **Return Date:** 2024-02-05
-- **Departure Airport:** Antalya/Antalya Airport   **Arrival Airport:** İzmir/Adnan Menderes Airport   **Departure Date:** 2024-02-05   **Return Date:** 2024-02-10
-- **Departure Airport:** Mersin/Çukurova Airport   **Arrival Airport:** Muğla/Dalaman Airport   **Departure Date:** 2024-02-01   **Return Date:** 2024-02-05
-- **Departure Airport:** İstanbul/Sabiha Gökçen Airport   **Arrival Airport**: Muğla/Dalaman Airport   **Departure Date:** 2024-02-03   **Return Date:** 2024-02-08
-- **Departure Airport:** İstanbul/İstanbul Airport   **Arrival Airport:** İzmir/Adnan Menderes Airport   **Departure Date:** 2024-02-02   **Return Date:** 2024-02-06
-- **Departure Airport:** İstanbul/Sabiha Gökçen Airport   **Arrival Airport:** Antalya/Antalya Airport   **Departure Date:** 2024-02-01    **Return Date:** 2024-02-05
-- **Departure Airport:** İstanbul/İstanbul Airport   **Arrival Airport:** Antalya/Antalya Airport    **Departure Date:** 2024-02-02    **Return Date:** 2024-02-06
-
+  
 ## Flight search screen
 
 ![SearchFlights](https://github.com/ceydapolat/Flight-Ticket-App/assets/45017077/a694462e-3ddb-4237-a3be-7d42506e156b)
